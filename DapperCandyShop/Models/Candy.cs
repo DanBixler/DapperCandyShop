@@ -17,5 +17,8 @@ namespace DapperCandyShop.Models
         public bool IsInStock { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
+        public IEnumerable<Candy> CandyOnSale { get; set; }
+        public IEnumerable<Candy> Candies { get; set; }
+        public string CurrentCategory { get; set; }
     }
 }
